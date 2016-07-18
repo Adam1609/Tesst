@@ -12,7 +12,7 @@ use pocketmine\utils\TextFormat as C;
 use pocketmine\utils\Config;
 use School\Study;
 
-class School extends PluginCommand
+class Study extends PluginCommand
 {
   public $plugin;
   
