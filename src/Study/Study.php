@@ -11,7 +11,7 @@ use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\utils\TextFormat as C;
 use pocketmine\utils\Config;
 
-class Study extends PluginBase implements Listener
+class Study extends PluginBase
 {
   public function onLoad(){
     $this->getLogger()->info(C::AQUA . "School is openning");
@@ -20,19 +20,18 @@ class Study extends PluginBase implements Listener
     @mkdir($this->getDataFolder());
     $this->classs = new Config($this->getDataFolder() . "classs.yml", Config::YAML);
     $this->getLogger()->info(C::GREEN . "Ready to Study on version " . $this->getDescription()->getVersion());
-    $this->saveDataConfig();
   }
     
   public function onDisable(){
     $this->classs->save();
-    $this->getLogger()->info(C:RED . "School closed");
+    $this->getLogger()->info(C::RED . "School closed");
   }
   
   public function onJoin(PlayerJoinEvent $event){
     $stu = $event->getPlayer();
     $player = $event->getPlayer()->getName();
     if ($this->classs->exists($Player)){
-      $stu->setDisplayName(TextFormat::LIGHT_PURPLE . "[ " .$   "] " . $stu->getDisplayName());
+      $stu->setDisplayName(TextFormat::LIGHT_PURPLE . "[HaveYourPussyItaLy] " . $stu->getDisplayName());
     }
   }
 }
