@@ -1,9 +1,9 @@
-name: 1vs1
-main: Minifixio\onevsone\OneVsOne
-version: 0.0.4
-api: [1.0.0, 1.1.0]
-description: 1vs1 Plugin
+name: School
+main: Study\Study
+version: 0.0.1
+api: [1.0.0, 2.0.0]
+description: Study Plugin
 permissions:
-  onevsone.refarena:
-    description: "Allows using /refarena"
+  school.study:
+    description: "Allows using /school"
     default: op
