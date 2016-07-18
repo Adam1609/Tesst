@@ -10,8 +10,9 @@ use pocketmine\Server;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\utils\TextFormat as C;
 use pocketmine\utils\Config;
+use School\Study;
 
-class Commands
+class School extends PluginCommand
 {
   public $plugin;
   
