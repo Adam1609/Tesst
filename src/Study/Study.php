@@ -1,6 +1,6 @@
 <?php
 
-namespace Study;
+namespace Twitt;
 
 use pocketmine\Player;
 use pocketmine\command\Command;
@@ -11,27 +11,19 @@ use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\utils\TextFormat as C;
 use pocketmine\utils\Config;
 
-class Study extends PluginBase
+class Twitt extends PluginBase
 {
   public function onLoad(){
-    $this->getLogger()->info(C::AQUA . "School is openning");
+    $this->getLogger()->info(C::AQUA . "Twitter is loading");
   }
   public function onEnable(){
     @mkdir($this->getDataFolder());
-    $this->classs = new Config($this->getDataFolder() . "classs.yml", Config::YAML);
-    $this->getLogger()->info(C::GREEN . "Ready to Study on version " . $this->getDescription()->getVersion());
+    $this->present = new Config($this->getDataFolder() . "present.yml", Config::YAML);
+    $this->getLogger()->info(C::GREEN . "Ready to online on version " . $this->getDescription()->getVersion());
   }
     
   public function onDisable(){
     $this->classs->save();
-    $this->getLogger()->info(C::RED . "School closed");
-  }
-  
-  public function onJoin(PlayerJoinEvent $event){
-    $stu = $event->getPlayer();
-    $player = $event->getPlayer()->getName();
-    if ($this->classs->exists($Player)){
-      $stu->setDisplayName(TextFormat::LIGHT_PURPLE . "[HaveYourPussyItaLy] " . $stu->getDisplayName());
-    }
-  }
+    $this->getLogger()->info(C::RED . "Twitter há bên hacked");
+  Ư
 }
