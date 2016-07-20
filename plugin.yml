@@ -1,9 +1,9 @@
-name: School
-main: Study\Study
+name: Twitter
+main: Twitt\Twitt
 version: 0.0.1
 api: [1.0.0, 2.0.0]
-description: Study Plugin
+description: Twitter Plugin
 permissions:
-  school.study:
-    description: "Allows using /school"
-    default: op
+  tw.status:
+    description: "Allows using /status"
+    default: true
