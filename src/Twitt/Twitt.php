@@ -24,6 +24,6 @@ class Twitt extends PluginBase
     
   public function onDisable(){
     $this->classs->save();
-    $this->getLogger()->info(C::RED . "Twitter há bên hacked");
-  Ư
+    $this->getLogger()->info(C::RED . "Twitter has been hacked");
+  }
 }
