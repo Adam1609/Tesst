@@ -1,9 +1,0 @@
-name: Twitter
-main: Twitt\Twitt
-version: 0.0.1
-api: [1.0.0, 2.0.0]
-description: Twitter Plugin
-permissions:
-  tw.status:
-    description: "Allows using /status"
-    default: true
