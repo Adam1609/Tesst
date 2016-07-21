@@ -1,0 +1,13 @@
+name: VIPs
+version: 0.0.1
+main: Vips\Vips
+api: [2.0.0]
+commands:
+  vips:
+    usage: /vips <list/donate>
+    aliases: [vips, dnt]
+    discription: Donate and get Vips
+permissions:
+  wl.vips:
+    default: true
+    discription: Donate and get Vips
