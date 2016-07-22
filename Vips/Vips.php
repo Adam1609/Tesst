@@ -9,7 +9,7 @@ use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 
 class Vips extends PluginBase{
-  /About Plugin Const
+  //About Plugin Const
 	
 	/** @var string PRODUCER Plugin producer */
 	const PRODUCER = "Godly";
