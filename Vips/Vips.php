@@ -8,6 +8,7 @@ use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
 use pocketmine\utils\Config;
+use Vips\Commands
 use pocketmine\utils\TextFormat as X;
 
 class Vips extends PluginBase {
