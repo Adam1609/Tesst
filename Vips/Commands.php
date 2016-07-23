@@ -16,3 +16,14 @@ class Vips{
 	public function __construct(Vips $pg) {
 		$this->plugin = $pg;
 	}
+        public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
+		if($sender instanceof Player) {
+			$player = $sender->getPlayer()->getName();
+			if(strtolower($command->getName("vips")))  {
+				if(empty($args)) {
+					$sender->sendMessage($this->plugin->formatMessage("§e✅>§d §aĐể biết thêm chi tiết nhấn /vips help"));
+					return true;
+				}
+			}
+		}
+        } 
